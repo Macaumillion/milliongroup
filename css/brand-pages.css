@@ -1,0 +1,677 @@
+.ruichendelights-page {
+    background-color: #f8f9fa;
+    padding: 0;
+}
+
+.ruichendelights-page .brand-header {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.ruichendelights-page .brand-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.ruichendelights-page .brand-header p {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+/* 品牌理念區 */
+.ruichendelights-page .brand-concept {
+    padding: 80px 5%;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ruichendelights-page .handwritten-title {
+    font-family: "Noto Serif TC", serif;
+    font-size: 2.5rem;
+    color: #800000;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.ruichendelights-page .concept-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+.ruichendelights-page .concept-image {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ruichendelights-page .concept-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ruichendelights-page .concept-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.ruichendelights-page .concept-text h2 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.ruichendelights-page .concept-text p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* 熱門商品區 */
+.ruichendelights-page .hot-products {
+    padding: 60px 5%;
+    background-color: #f8f9fa;
+}
+
+.ruichendelights-page .hot-products h2 {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.ruichendelights-page .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.ruichendelights-page .product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ruichendelights-page .product-item:hover {
+    transform: translateY(-10px);
+}
+
+.ruichendelights-page .product-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.ruichendelights-page .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ruichendelights-page .product-item:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.ruichendelights-page .product-item h3 {
+    color: #4a4a4a;
+    padding: 15px 15px 5px;
+    font-size: 1.3rem;
+}
+
+.ruichendelights-page .product-item p {
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+/* 門店資訊區 */
+.ruichendelights-page .store-info {
+    padding: 60px 5%;
+    background-color: #fff;
+}
+
+.ruichendelights-page .store-info h2 {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.ruichendelights-page .store-grid {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ruichendelights-page .store-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.ruichendelights-page .store-card h3 {
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.ruichendelights-page .store-card p {
+    color: #666;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.ruichendelights-page .store-card i {
+    margin-right: 15px;
+    color: #4a4a4a;
+    width: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* 線上訂購區 */
+.ruichendelights-page .online-order {
+    padding: 60px 5%;
+    background-color: #f8f9fa;
+}
+
+.ruichendelights-page .online-order h2 {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.ruichendelights-page .order-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ruichendelights-page .order-option {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+.ruichendelights-page .order-option i {
+    font-size: 3rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.ruichendelights-page .order-option h3 {
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.ruichendelights-page .order-option p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.ruichendelights-page .btn {
+    display: inline-block;
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.ruichendelights-page .btn:hover {
+    background-color: #333;
+}
+
+/* 人才招募區 */
+.ruichendelights-page .recruitment {
+    padding: 60px 5%;
+    background-color: #fff;
+}
+
+.ruichendelights-page .recruitment h2 {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.ruichendelights-page .recruitment-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ruichendelights-page .recruitment-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.ruichendelights-page .benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.ruichendelights-page .benefit-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.ruichendelights-page .benefit-item i {
+    color: #4a4a4a;
+    margin-right: 10px;
+}
+
+.ruichendelights-page .benefit-item span {
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+/* 響應式設計 */
+@media (max-width: 992px) {
+    .ruichendelights-page .brand-concept {
+        flex-direction: column;
+    }
+    
+    .ruichendelights-page .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ruichendelights-page .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ruichendelights-page .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ruichendelights-page .store-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ruichendelights-page .order-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ruichendelights-page .benefits {
+        grid-template-columns: 1fr;
+    }
+    
+    .ruichendelights-page .store-card {
+        padding: 30px 20px;
+    }
+    
+    .ruichendelights-page .store-card p {
+        font-size: 1rem;
+    }
+}
+
+/* 瑞珍冰室頁面樣式 */
+.ruichendelights-page .brand-hero {
+    height: 100vh;
+    background: url('../images/ruichendelights-bg.jpg') no-repeat center center;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #800000;
+}
+
+.ruichendelights-page .brand-slogan {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-family: "Noto Serif TC", serif;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.ruichendelights-page .brand-slogan {
+    opacity: 1;
+}
+
+/* 品牌故事區 */
+.ruichendelights-page .brand-story {
+    padding: 80px 5%;
+    background-color: #fff;
+}
+
+.ruichendelights-page .brand-story .section-title {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-family: 'Noto Serif TC', serif;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ruichendelights-page .brand-story .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #d4af37;
+}
+
+.ruichendelights-page .brand-story .story-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ruichendelights-page .brand-story .story-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.ruichendelights-page .brand-story .story-content p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.ruichendelights-page .brand-story .story-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.ruichendelights-page .brand-story .story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 產品特色區 */
+.ruichendelights-page .product-features {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.ruichendelights-page .product-features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.ruichendelights-page .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ruichendelights-page .feature-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ruichendelights-page .feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.ruichendelights-page .feature-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.ruichendelights-page .feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ruichendelights-page .feature-item:hover .feature-image img {
+    transform: scale(1.1);
+}
+
+.ruichendelights-page .feature-item h3 {
+    color: #333;
+    padding: 15px 15px 5px;
+    font-size: 1.3rem;
+}
+
+.ruichendelights-page .feature-item p {
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+/* 線上訂購區 */
+.ruichendelights-page .online-order {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.ruichendelights-page .online-order h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.ruichendelights-page .order-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ruichendelights-page .order-option {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.ruichendelights-page .order-option:hover {
+    transform: translateY(-5px);
+}
+
+.ruichendelights-page .order-option i {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ruichendelights-page .order-option h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.ruichendelights-page .order-option p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.ruichendelights-page .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.ruichendelights-page .btn:hover {
+    background-color: #222;
+}
+
+/* 人才招募區 */
+.ruichendelights-page .recruitment {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.ruichendelights-page .recruitment h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.ruichendelights-page .recruitment-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.ruichendelights-page .recruitment-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.ruichendelights-page .benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.ruichendelights-page .benefit-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.ruichendelights-page .benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.ruichendelights-page .benefit-item i {
+    color: #333;
+    margin-right: 10px;
+}
+
+.ruichendelights-page .benefit-item span {
+    color: #333;
+    font-weight: bold;
+}
+
+/* 響應式設計 */
+@media (max-width: 992px) {
+    .ruichendelights-page .story-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .ruichendelights-page .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ruichendelights-page .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ruichendelights-page .brand-hero {
+        height: 60vh;
+    }
+    
+    .ruichendelights-page .brand-slogan {
+        font-size: 2.5rem;
+    }
+    
+    .ruichendelights-page .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ruichendelights-page .order-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ruichendelights-page .benefits {
+        grid-template-columns: 1fr;
+    }
+    
+    .ruichendelights-page .brand-story .story-container {
+        flex-direction: column;
+    }
+    
+    .ruichendelights-page .brand-story .story-image {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+} 

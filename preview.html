@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萬利集團 - 頁面預覽</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: #f0f2f5;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .preview-header {
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preview-header h1 {
+            color: #c41230;
+            font-size: 20px;
+        }
+
+        .preview-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .preview-controls select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .preview-controls button {
+            padding: 8px 15px;
+            background: #c41230;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .preview-frame {
+            flex: 1;
+            width: 100%;
+            height: calc(100vh - 60px);
+            border: none;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="preview-header">
+        <h1>萬利集團網站預覽</h1>
+        <div class="preview-controls">
+            <select id="pageSelect" onchange="changePage(this.value)">
+                <option value="index.html">首頁</option>
+                <option value="about.html">公司簡介</option>
+                <option value="contact.html">聯絡我們</option>
+            </select>
+            <select id="deviceSelect" onchange="changeDevice(this.value)">
+                <option value="100%">桌面版</option>
+                <option value="768px">平板版</option>
+                <option value="375px">手機版</option>
+            </select>
+            <button onclick="refreshFrame()">刷新</button>
+        </div>
+    </header>
+
+    <iframe id="previewFrame" class="preview-frame" src="index.html" title="頁面預覽"></iframe>
+
+    <script>
+        function changePage(page) {
+            document.getElementById('previewFrame').src = page;
+        }
+
+        function changeDevice(width) {
+            document.getElementById('previewFrame').style.width = width;
+        }
+
+        function refreshFrame() {
+            const frame = document.getElementById('previewFrame');
+            frame.src = frame.src;
+        }
+    </script>
+</body>
+</html> 
