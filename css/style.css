@@ -2274,4 +2274,99 @@ footer {
         font-size: 1rem;
         line-height: 1.8;
     }
+}
+
+/* 關於我們部分的響應式設計 */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 2rem 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+
+    .about-image {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    .about-image img {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .founder-section {
+        padding: 2rem 1rem;
+    }
+
+    .founders-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .founder-card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .founder-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 1rem;
+    }
+
+    .founder-info {
+        text-align: center;
+    }
+
+    .founder-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .founder-title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .founder-name-en {
+        font-size: 0.9rem;
+    }
+
+    .founders-description {
+        padding: 1rem;
+        text-align: justify;
+    }
+
+    .founders-description p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
 } 
