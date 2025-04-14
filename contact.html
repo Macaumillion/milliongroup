@@ -22,7 +22,13 @@
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html#home">公司簡介</a></li>
+                <li class="dropdown">
+                    <a href="about.html">公司簡介</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html#founders">公司創辦人</a></li>
+                        <li><a href="about.html#management">管理層介紹</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#">公司業務</a>
                     <ul class="dropdown-menu">
@@ -111,6 +117,41 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        // 處理導覽列滾動效果
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // 移動端選單
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        // 處理下拉選單
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', function() {
+                const dropdownMenu = this.querySelector('.dropdown-menu');
+                if (dropdownMenu) {
+                    dropdownMenu.style.display = 'block';
+                }
+            });
+            dropdown.addEventListener('mouseleave', function() {
+                const dropdownMenu = this.querySelector('.dropdown-menu');
+                if (dropdownMenu) {
+                    dropdownMenu.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html> 

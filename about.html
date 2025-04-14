@@ -6,6 +6,8 @@
     <title>公司簡介 - 萬利集團 Million Group</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/management.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Strikingly 相容性程式碼 -->
     <script src="https://cdn.strikingly.com/v2/strikingly.js"></script>
@@ -27,12 +29,19 @@
                 <li class="dropdown">
                     <a href="about.html">公司簡介</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#founders">公司創辦人</a></li>
-                        <li><a href="#development">發展歷程</a></li>
-                        <li><a href="#management">管理層介紹</a></li>
+                        <li><a href="about.html#founders">公司創辦人</a></li>
+                        <li><a href="about.html#management">管理層介紹</a></li>
                     </ul>
                 </li>
-                <li><a href="index.html#services">公司業務</a></li>
+                <li class="dropdown">
+                    <a href="#">公司業務</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/TAIPAPLAZA/" target="_blank">泉亮廣場</a></li>
+                        <li><a href="https://www.facebook.com/p/%E9%AB%98%E5%9C%B0%E7%83%8F%E5%BB%A3%E5%A0%B4-100064111322020/" target="_blank">高地烏廣場</a></li>
+                        <li><a href="https://www.mspace.mo/" target="_blank">MSPACE共享辦公室</a></li>
+                        <li><a href="https://www.m8macau.com/" target="_blank">M8項目</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="index.html#brands">品牌代理</a>
                     <ul class="dropdown-menu">
@@ -127,13 +136,13 @@
                     </div>
                     <div class="management-member">
                         <div class="member-image">
-                            <img src="images/Elvis.jpg" alt="游副總經理">
+                            <img src="images/Elvis.jpg" alt="游研發生產長">
                         </div>
                         <div class="member-info">
                             <h3>游繼發 Elvis Iao</h3>
-                            <div class="position">副總經理</div>
+                            <div class="position">研發生產長 CPO</div>
                             <div class="description">
-                                負責研發生產技術與品質管理，擁有豐富的工程技術和生產管理經驗。專注於技術創新、生產流程優化和品質控制，推動公司產品和服務的技術升級。
+                                負責研發生產技術與品質管理，擁有豐富的工程技術和生產管理經驗。專注於產品技術研發、生產流程優化和品質控制，推動公司產品和服務的技術升級，並同時監控產線及工廠的標準化和食品安全認證。
                             </div>
                         </div>
                     </div>
@@ -182,6 +191,23 @@
         
         mobileMenuBtn.addEventListener('click', function() {
             navLinks.classList.toggle('active');
+        });
+
+        // 處理下拉選單
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', function() {
+                const dropdownMenu = this.querySelector('.dropdown-menu');
+                if (dropdownMenu) {
+                    dropdownMenu.style.display = 'block';
+                }
+            });
+            dropdown.addEventListener('mouseleave', function() {
+                const dropdownMenu = this.querySelector('.dropdown-menu');
+                if (dropdownMenu) {
+                    dropdownMenu.style.display = 'none';
+                }
+            });
         });
     </script>
 </body>
