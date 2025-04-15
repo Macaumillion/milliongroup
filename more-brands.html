@@ -8,109 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        window.location.href = "contact.html";
+    </script>
 </head>
 <body>
-    <!-- 導航欄 -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="萬利集團 Logo">
-                </a>
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">首頁</a></li>
-                <li class="dropdown">
-                    <a href="about.html">關於我們</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="about.html#founders">公司創辦人</a></li>
-                        <li><a href="about.html#management">管理層介紹</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">公司業務</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.facebook.com/泉亮廣場" target="_blank">泉亮廣場</a></li>
-                        <li><a href="https://www.facebook.com/高地烏廣場" target="_blank">高地烏廣場</a></li>
-                        <li><a href="https://www.facebook.com/MSPACE共享辦公室" target="_blank">MSPACE共享辦公室</a></li>
-                        <li><a href="https://www.facebook.com/M8項目" target="_blank">M8項目</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">更多品牌</a></li>
-                <li><a href="contact.html">聯絡我們</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- 主要內容區域 -->
-    <main>
-        <section class="coming-soon">
-            <h1>更多品牌即將進駐</h1>
-            <p>敬請期待！</p>
-        </section>
-    </main>
-
-    <!-- 頁尾 -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>聯絡資訊</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 澳門氹仔海洋廣場3樓E&F</p>
-                <p><i class="fas fa-phone"></i> +853 85910888</p>
-                <p><i class="fas fa-envelope"></i> macau.million@gmail.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>關注我們</h3>
-                <div class="social-links">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 萬利集團品牌控股有限公司. 版權所有 不得轉載. | <a href="privacy.html">隱私條例</a></p>
-        </div>
-    </footer>
-
-    <script>
-        // 處理導航欄滾動效果
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // 移動端選單
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        
-        menuToggle.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-        });
-
-        // 處理下拉選單
-        const dropdowns = document.querySelectorAll('.dropdown');
-        dropdowns.forEach(dropdown => {
-            dropdown.addEventListener('mouseenter', function() {
-                const dropdownMenu = this.querySelector('.dropdown-menu');
-                if (dropdownMenu) {
-                    dropdownMenu.style.display = 'block';
-                }
-            });
-            dropdown.addEventListener('mouseleave', function() {
-                const dropdownMenu = this.querySelector('.dropdown-menu');
-                if (dropdownMenu) {
-                    dropdownMenu.style.display = 'none';
-                }
-            });
-        });
-    </script>
+    <p>正在跳轉到聯絡我們頁面...</p>
 </body>
 </html> 
