@@ -1232,14 +1232,20 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 4rem;
     align-items: center;
 }
 
+.about-text {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
 .about-text h2 {
-        font-size: 2.5rem;
+    font-size: 2.5rem;
     color: #333;
     margin-bottom: 2rem;
 }
@@ -1252,6 +1258,8 @@ footer {
 }
 
 .about-image {
+    width: 100%;
+    max-width: 800px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
