@@ -125,6 +125,28 @@
     cursor: pointer;
 }
 
+/* 語言切換按鈕樣式 */
+.language-switch {
+    margin-left: 20px;
+}
+
+.lang-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #f5f5f5;
+    border-color: #ccc;
+}
+
 /* 響應式設計 */
 @media (max-width: 768px) {
     .main-nav {
@@ -187,6 +209,15 @@
 
     .mobile-menu-btn {
         display: block;
+    }
+
+    .language-switch {
+        margin: 10px 0;
+    }
+    
+    .lang-btn {
+        display: block;
+        text-align: center;
     }
 }
 
