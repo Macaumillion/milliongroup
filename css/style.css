@@ -1223,8 +1223,9 @@ footer {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* About Section Styles */
 .about-section {
-    padding: 5rem 0;
+    padding: 4rem 0;
     background-color: #fff;
 }
 
@@ -1234,8 +1235,21 @@ footer {
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     align-items: center;
+    gap: 2rem;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .about-text {
@@ -1247,7 +1261,20 @@ footer {
 .about-text h2 {
     font-size: 2.5rem;
     color: #333;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.about-text h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #d4af37;
 }
 
 .about-text p {
@@ -1257,434 +1284,37 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-.about-image {
-    width: 100%;
-    max-width: 800px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.about-image:hover img {
-    transform: scale(1.05);
-}
-
-.founder-section {
-    padding: 2rem 0;
-    background: linear-gradient(to bottom, #fff, #f9f9f9);
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #333;
-}
-
-.founders-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6rem;
-    padding: 0 2rem;
-}
-
-.founder-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: transparent;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.founder-image {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.founder-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    object-position: center;
-    transition: transform 0.3s ease;
-}
-
-.founder-info {
-    text-align: center;
-    padding: 0.5rem;
-}
-
-.founder-info h3 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 0.3rem;
-}
-
-.founder-title {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-.founder-name-en {
-    font-size: 1.3rem;
-    color: #888;
-    font-style: italic;
-}
-
-.founders-description {
-    max-width: 1000px;
-    margin: 3rem auto 0;
-    padding: 2rem;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-
-.founders-description p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 1.5rem;
-    text-align: justify;
-}
-
-.founders-description p:last-child {
-    margin-bottom: 0;
-}
-
+/* 響應式設計 */
 @media (max-width: 768px) {
-    .founders-container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+    .about-section {
+        padding: 3rem 0;
+    }
+
+    .about-content {
         padding: 0 1.5rem;
     }
 
-    .founder-image {
-        width: 280px;
-        height: 280px;
+    .about-text h2 {
+        font-size: 2rem;
     }
 
-    .founder-info {
-        padding: 0.3rem;
-    }
-
-    .founder-info h3 {
-        font-size: 1.8rem;
-    }
-
-    .founder-title {
-        font-size: 1.1rem;
-    }
-
-    .founder-name-en {
-        font-size: 1.2rem;
-    }
-
-    .founders-description {
-        margin-top: 3rem;
-        padding: 2rem;
-    }
-
-    .founders-description p {
+    .about-text p {
         font-size: 1rem;
         line-height: 1.6;
     }
 }
 
-.development-section {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    position: relative;
-}
-
-.development-section h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    color: #333;
-    font-size: 2.5em;
-}
-
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(to bottom, #c41230, #ff4d6d);
-    transform: translateX(-50%);
-}
-
-.timeline-container {
-    position: relative;
-    width: 100%;
-    padding: 20px 0;
-}
-
-.timeline-item {
-    position: relative;
-    width: 45%;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    margin-bottom: 30px;
-}
-
-.timeline-item:nth-child(odd) {
-    float: left;
-    clear: both;
-    margin-right: 55%;
-}
-
-.timeline-item:nth-child(even) {
-    float: right;
-    clear: both;
-    margin-left: 55%;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #c41230;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-}
-
-.timeline-item:nth-child(odd)::before {
-    right: -60px;
-}
-
-.timeline-item:nth-child(even)::before {
-    left: -60px;
-}
-
-.year {
-    font-size: 24px;
-    font-weight: bold;
-    color: #c41230;
-    margin-bottom: 10px;
-}
-
-.event {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* 管理層介紹區塊 */
-.team-section {
-    padding: 80px 0;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.team-section h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    color: #333;
-    font-size: 2.5em;
-}
-
-.team-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.team-member {
-    text-align: center;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    width: 100%;
-    max-width: 600px;
-}
-
-.team-member:hover {
-    transform: translateY(-10px);
-}
-
-.team-member img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    object-fit: cover;
-}
-
-.team-member h3 {
-    color: #333;
-    margin: 15px 0;
-    font-size: 1.5em;
-}
-
-.team-member p {
-    color: #666;
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-    .timeline-item {
-        width: 100%;
-        float: none;
-        margin: 0 0 30px 60px !important;
+@media (max-width: 480px) {
+    .about-section {
+        padding: 2rem 0;
     }
 
-    .timeline-item::before {
-        left: -40px !important;
+    .about-content {
+        padding: 0 1rem;
     }
 
-    .timeline::before {
-        left: 20px;
-    }
-
-    .team-member {
-        max-width: 100%;
-    }
-}
-
-.management-section {
-    padding: 60px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-}
-
-.management-section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #333;
-    font-size: 2.2em;
-}
-
-.management-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.management-member {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.management-member:hover {
-    transform: translateY(-8px);
-}
-
-.member-image {
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-    position: relative;
-}
-
-.member-image img {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 30%;
-    transition: transform 0.3s ease;
-    margin: 0 auto;
-    display: block;
-}
-
-.management-member:hover .member-image img {
-    transform: scale(1.05);
-}
-
-.member-info {
-    padding: 25px;
-}
-
-.member-info h3 {
-    color: #333;
-    font-size: 1.5em;
-    margin-bottom: 8px;
-}
-
-.member-info .position {
-    color: #c41230;
-    font-size: 1.1em;
-    margin-bottom: 12px;
-    font-weight: 500;
-}
-
-.member-info .description {
-    color: #666;
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-    .management-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .member-image {
-        height: 200px;
-    }
-
-    .member-image img {
-        width: 60%;
-    }
-
-    .member-info {
-        padding: 20px;
-    }
-
-    .member-info h3 {
-        font-size: 1.3em;
-    }
-
-    .member-info .position {
-        font-size: 1em;
-    }
-
-    .member-info .description {
-        font-size: 0.95em;
+    .about-text h2 {
+        font-size: 1.8rem;
     }
 }
 
@@ -2330,10 +1960,6 @@ footer {
         object-fit: cover;
     }
 
-    .founder-section {
-        padding: 2rem 1rem;
-    }
-
     .founders-container {
         flex-direction: column;
         gap: 2rem;
@@ -2366,18 +1992,127 @@ footer {
         margin-bottom: 0.5rem;
     }
 
-    .founder-name-en {
-        font-size: 0.9rem;
-    }
-
-    .founders-description {
+    .founder-description {
         padding: 1rem;
         text-align: justify;
     }
 
-    .founders-description p {
+    .founder-description p {
         font-size: 1rem;
         line-height: 1.8;
         margin-bottom: 1rem;
+    }
+}
+
+/* 創辦人部分樣式 */
+.founder-section {
+    padding: 4rem 2rem;
+    background: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #c41230;
+    margin: 1rem auto;
+}
+
+.founders-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.founder-card {
+    flex: 1;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+}
+
+.founder-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.founder-card:hover .founder-image img {
+    transform: scale(1.05);
+}
+
+.founder-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.founder-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.founder-title {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.founder-name-en {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.founders-description {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.founders-description p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .founders-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .founder-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .founder-image {
+        height: 300px;
     }
 } 
