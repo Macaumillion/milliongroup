@@ -60,7 +60,7 @@ body {
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
-    height: 60px;
+    height: 90px;
 }
 
 .main-nav.scrolled {
@@ -71,7 +71,7 @@ body {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0.5rem 2rem;
+    padding: 1.2rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +90,7 @@ body {
 }
 
 .logo-img {
-    height: 50px;
+    height: 72px;
     width: auto;
     margin-right: 1rem;
 }
