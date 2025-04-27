@@ -793,9 +793,7 @@ footer {
     line-height: 1.4;
     max-width: 300px;
     margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* 允許自動換行，完整顯示內容 */
 }
 
 @media (max-width: 768px) {
