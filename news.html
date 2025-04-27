@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新聞中心</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.strikingly.com/v2/strikingly.js"></script>
+    <style>
+        body {
+            background: #fff;
+            margin: 0;
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', Arial, sans-serif;
+        }
+        .news-header {
+            background: url('images/news-bg.jpg') center center/cover no-repeat;
+            position: relative;
+            height: 80vh;
+            min-height: 400px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            color: #fff;
+            margin-bottom: 32px;
+            padding-bottom: 48px;
+        }
+        .news-header::before {
+            content: '';
+            position: absolute;
+            left: 0; right: 0; top: 0; bottom: 0;
+            background: rgba(0,0,0,0.35);
+            z-index: 1;
+        }
+        .news-header span {
+            position: relative;
+            z-index: 2;
+        }
+        .news-list {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 16px 48px 16px;
+        }
+        .news-item {
+            border-bottom: 1px solid #eee;
+            padding: 32px 0 24px 0;
+        }
+        .news-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 8px;
+        }
+        .news-date {
+            color: #888;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        .news-summary {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .news-link {
+            font-size: 1rem;
+            color: #1976d2;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .news-header { font-size: 2rem; }
+            .news-title { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="萬利集團 Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-cn">萬利集團</span>
+                        <span class="logo-en">Million Group</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="about.html">公司簡介</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html#about">關於公司</a></li>
+                        <li><a href="about.html#founders">創辦人</a></li>
+                        <li><a href="about.html#development">公司發展</a></li>
+                        <li><a href="about.html#management">管理層介紹</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">公司業務</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/TAIPAPLAZA/" target="_blank">泉亮廣場</a></li>
+                        <li><a href="https://www.facebook.com/p/%E9%AB%98%E5%9C%B0%E7%83%8F%E5%BB%A3%E5%A0%B4-100064111322020/" target="_blank">高地烏廣場</a></li>
+                        <li><a href="https://www.mspace.mo/" target="_blank">MSPACE商務中心</a></li>
+                        <li><a href="https://www.m8macau.com/" target="_blank">M8項目</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#brands">品牌代理</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hungruichen.html">洪瑞珍</a></li>
+                        <li><a href="https://www.heytea.com/" target="_blank">喜茶</a></li>
+                        <li><a href="ruichendelights.html">瑞珍冰室</a></li>
+                        <li><a href="more-brands.html">更多品牌進駐中</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">新聞中心</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+                <li><a href="index.html#location">位置</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="language-switch">
+                <a href="en/about.html" class="lang-btn">English</a>
+            </div>
+        </div>
+    </nav>
+    <div class="news-header"><span>新聞中心</span></div>
+    <div class="news-list">
+        <div class="news-item">
+            <div class="news-title">洪瑞珍登陸澳門葡京人</div>
+            <div class="news-date">2023-11-17</div>
+            <div class="news-summary">
+                「洪瑞珍」於 16 日下午 1 時在澳門葡京人舉行隆重開幕儀式，主禮嘉賓包括多位集團高層及嘉賓。洪瑞珍近年來不斷創新品牌，澳門推出全新包裝風味的鳳梨酥、蛋卷每日限量販售，並推出全亞洲限定禮盒，成為熱門打卡點。未來半年內將於氹仔泉亮商場及澳門其他地區開設分店。
+            </div>
+            <a class="news-link" href="https://news.macaulotustv.com/home/index/detail/id/1924.html" target="_blank">閱讀全文</a>
+        </div>
+        <div class="news-item">
+            <div class="news-title">【企業診斷】地產轉營商場租賃管理 引入品牌</div>
+            <div class="news-date">2024-02-05</div>
+            <div class="news-summary">
+                万利集團自2012年成立，最初以地產中介為主，後逐步轉型發展至商場租賃管理、共享辦公室及代理外地餐飲品牌。現時經營三個商場，合共建築面積五萬平方米，吸引二百多家中小企進駐，未來將繼續引入海外品牌，拓展大灣區市場。
+            </div>
+            <a class="news-link" href="http://www.smes-macao.com/Business/showimg.php?id=16001" target="_blank">閱讀全文</a>
+        </div>
+        <div class="news-item">
+            <div class="news-title">【企業診斷】微電影：萬利集團品牌故事</div>
+            <div class="news-date">2023-12-20</div>
+            <div class="news-summary">
+                本片介紹萬利集團的品牌發展歷程，從地產中介到多元化經營，見證澳門本地企業的成長與創新。影片展現集團如何協助中小企成長，並積極推動本地經濟發展。
+            </div>
+            <a class="news-link" href="http://www.smes-macao.com/Video/showimg.php?id=5329" target="_blank">觀看影片</a>
+        </div>
+    </div>
+</body>
+</html> 
